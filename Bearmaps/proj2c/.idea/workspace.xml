@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:skeleton" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd65486e-af3b-4a34-bd06-df996b7dee12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../library-fa20" beforeDir="false" afterPath="$PROJECT_DIR$/../library-fa20" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jnqCBrQ2gaRsY9QtsLaqZhnit0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.DemoAlternateExampleSolution">
+    <configuration name="DemoAlternateExampleSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bearmaps.proj2c.lectureexample.DemoAlternateExampleSolution" />
+      <module name="proj2c" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.proj2c.lectureexample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoIntegerHopPuzzleSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bearmaps.proj2c.integerhoppuzzle.DemoIntegerHopPuzzleSolution" />
+      <module name="proj2c" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.proj2c.integerhoppuzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoLectureExampleSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bearmaps.proj2c.lectureexample.DemoLectureExampleSolution" />
+      <module name="proj2c" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.proj2c.lectureexample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanityTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2c" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.proj2c.sanitytests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps.proj2c.sanitytests" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.proj2c.sanitytests.SanityTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanityTests.testStart0Goal0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2c" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.proj2c.sanitytests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps.proj2c.sanitytests" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.proj2c.sanitytests.SanityTests" />
+      <option name="METHOD_NAME" value="testStart0Goal0" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoAlternateExampleSolution" />
+        <item itemvalue="Application.DemoLectureExampleSolution" />
+        <item itemvalue="JUnit.SanityTests" />
+        <item itemvalue="Application.DemoIntegerHopPuzzleSolution" />
+        <item itemvalue="JUnit.SanityTests.testStart0Goal0" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd65486e-af3b-4a34-bd06-df996b7dee12" name="Default Changelist" comment="" />
+      <created>1604450078443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604450078443</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="728" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604990913830">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="728" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1604990913830" />
+    <state x="505" y="327" key="DetectedRootsChooserDialog" timestamp="1604560703536">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="505" y="327" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1604560703536" />
+    <state width="886" height="422" key="GridCell.Tab.0.bottom" timestamp="1605090528203">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605090528203" />
+    <state width="886" height="422" key="GridCell.Tab.0.center" timestamp="1605090528197">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605090528197" />
+    <state width="886" height="422" key="GridCell.Tab.0.left" timestamp="1605090528195">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605090528195" />
+    <state width="886" height="422" key="GridCell.Tab.0.right" timestamp="1605090528202">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605090528202" />
+    <state width="886" height="422" key="GridCell.Tab.1.bottom" timestamp="1605090528216">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605090528216" />
+    <state width="886" height="422" key="GridCell.Tab.1.center" timestamp="1605090528210">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605090528210" />
+    <state width="886" height="422" key="GridCell.Tab.1.left" timestamp="1605090528208">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605090528208" />
+    <state width="886" height="422" key="GridCell.Tab.1.right" timestamp="1605090528211">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605090528211" />
+    <state width="886" height="422" key="GridCell.Tab.2.bottom" timestamp="1605090528225">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605090528225" />
+    <state width="886" height="422" key="GridCell.Tab.2.center" timestamp="1605090528219">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1605090528219" />
+    <state width="886" height="422" key="GridCell.Tab.2.left" timestamp="1605090528217">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1605090528217" />
+    <state width="886" height="422" key="GridCell.Tab.2.right" timestamp="1605090528220">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="886" height="422" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1605090528220" />
+    <state x="208" y="31" key="SettingsEditor" timestamp="1604560754845">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604560754845" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bearmaps/proj2c/lectureexample/DemoAlternateExampleSolution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/proj2c$SanityTests_testStart6Goal0.ic" NAME="SanityTests.testStart6Goal0 Coverage Results" MODIFIED="1604993094619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>bearmaps.proj2c.sanitytests.*</FILTER>
+    </SUITE>
+  </component>
+</project>

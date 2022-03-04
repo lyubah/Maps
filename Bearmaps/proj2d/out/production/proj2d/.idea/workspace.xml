@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:skeleton" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="219754a5-5d7d-43e7-a008-02d39c89dcf1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1k8mgAmsmT4r7JO2ozVKN7qjxBl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bearmaps/proj2ab" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15675057" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bearmaps/proj2ab" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRouter">
+    <configuration name="MapServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bearmaps.proj2d.MapServer" />
+      <module name="proj2d" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.proj2d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRasterAPIHandler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2d" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps.test" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.test.TestRasterAPIHandler" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRasterAPIHandler.testProcessRequests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2d" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps.test" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.test.TestRasterAPIHandler" />
+      <option name="METHOD_NAME" value="testProcessRequests" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRouter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj2d" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bearmaps.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bearmaps.test" />
+      <option name="MAIN_CLASS_NAME" value="bearmaps.test.TestRouter" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-XX:+ShowCodeDetailsInExceptionMessages " />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRouter" />
+        <item itemvalue="JUnit.TestRasterAPIHandler.testProcessRequests" />
+        <item itemvalue="JUnit.TestRasterAPIHandler" />
+        <item itemvalue="Application.MapServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="219754a5-5d7d-43e7-a008-02d39c89dcf1" name="Default Changelist" comment="" />
+      <created>1605090705399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605090705399</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="796" y="100" width="544" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605321162018">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="796" y="100" width="544" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1605321162018" />
+    <state x="792" y="351" width="430" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605402566869">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="792" y="351" width="430" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1605402566869" />
+    <state x="714" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605419968444">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="714" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605419968444" />
+    <state x="505" y="298" key="DetectedRootsChooserDialog" timestamp="1605093071533">
+      <screen x="0" y="23" width="1440" height="795" />
+    </state>
+    <state x="505" y="298" key="DetectedRootsChooserDialog/0.23.1440.795@0.23.1440.795" timestamp="1605093071533" />
+    <state width="791" height="308" key="GridCell.Tab.0.bottom" timestamp="1605424197641">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="791" height="308" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605424197641" />
+    <state width="804" height="266" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1605251943272" />
+    <state width="791" height="308" key="GridCell.Tab.0.center" timestamp="1605424197636">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="791" height="308" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605424197636" />
+    <state width="804" height="266" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1605251943271" />
+    <state width="791" height="308" key="GridCell.Tab.0.left" timestamp="1605424197633">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="791" height="308" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605424197633" />
+    <state width="804" height="266" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1605251943270" />
+    <state width="791" height="308" key="GridCell.Tab.0.right" timestamp="1605424197639">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="791" height="308" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605424197639" />
+    <state width="804" height="266" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1605251943271" />
+    <state x="208" y="0" key="SettingsEditor" timestamp="1605093202470">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605093202470" />
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.795@0.23.1440.795" timestamp="1605093133121" />
+    <state x="143" y="72" key="new project wizard" timestamp="1605420304026">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="143" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1605420304026" />
+    <state x="679" y="233" key="refactoring.ChangeSignatureDialog" timestamp="1605419121172">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="679" y="233" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1605419121172" />
+    <state x="708" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605412360155">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="708" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605412360155" />
+  </component>
+</project>
