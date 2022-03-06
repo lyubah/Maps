@@ -9,21 +9,27 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 
 public class StreetMapGraph implements AStarGraph<Long> {
     private Map<Long, Node> nodes = new HashMap<>();
     private Map<Long, Set<WeightedEdge<Long>>> neighbors = new HashMap<>();
 
-    private StreetMapGraph() {
-    }
 
-    public StreetMapGraph(String filename) {
-        StreetMapGraph smg = StreetMapGraph.readFromXML(filename);
-        this.nodes = smg.nodes;
-        this.neighbors = smg.neighbors;
-    }
+    /**
+     * Private empty constructor. StreetMapGraphs should only be
+     * instantiated by clients using static creation methods
+     * readFromXML and readFromSimpleFormat.
+     */
+    private StreetMapGraph() {}
 
     /**
      * Returns a list of outgoing edges for V. Assumes V exists in this
@@ -55,7 +61,7 @@ public class StreetMapGraph implements AStarGraph<Long> {
      * Returns a set of my vertices. Altering this set does not alter this
      * graph.
      **/
-    private Set<Long> vertices() {
+    public Set<Long> vertices() {
         Set<Long> vertices = new HashSet<>();
         for (long id : nodes.keySet()) {
             vertices.add(id);
@@ -65,10 +71,28 @@ public class StreetMapGraph implements AStarGraph<Long> {
     }
 
     /**
+     * Writes this graph to the file at path FILENAME, in "simple-format";
+     * creates file if it does not exist. The file is formatted as follows:
+     * -The first line is the number of nodes N
+     * -The next N lines represent nodes in the format (ID, LAT, LON)
+     * -The final N lines represent neighbors in the format ID : ID1 ID2 ... IDN
+     */
+    public void writeToFile(String filename) {
+        try {
+            File file = new File(filename);
+            FileOutputStream out = new FileOutputStream(file);
+            out.write(getSimpleFormat().getBytes());
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * Factory method. Creates and returns a graph from an OSM XML
      * file. Assumes file is correctly formatted.
      */
-    private static StreetMapGraph readFromXML(String filename) {
+    public static StreetMapGraph readFromXML(String filename) {
         StreetMapGraph smg = new StreetMapGraph();
         try {
             File inputFile = new File(filename);
@@ -85,6 +109,44 @@ public class StreetMapGraph implements AStarGraph<Long> {
         return smg;
     }
 
+    /**
+     * Factory method. Creates and returns a graph from the simple-format
+     * file at path FILENAME; assumes file is correctly formatted.
+     * See writeToFile for file format.
+     */
+    public static StreetMapGraph readFromSimpleFormat(String filename) {
+        StreetMapGraph graph = new StreetMapGraph();
+        try {
+            File file = new File(filename);
+            Scanner in = new Scanner(file);
+            int n = Integer.parseInt(in.nextLine());
+            for (int i = 0; i < n; ++i) {
+                String nodeString = in.nextLine().replace("(", "");
+                String[] tokens = nodeString.split("[,)]");
+                Node node = Node.of(Long.parseLong(tokens[0]),
+                                    Double.parseDouble(tokens[1]),
+                                    Double.parseDouble(tokens[2]));
+                graph.addNode(node);
+            }
+
+            for (int i = 0; i < n; ++i) {
+                String neighborsString = in.nextLine();
+                String[] tokens = neighborsString.split("[^\\[0-9\\]]+");
+                long fromID = Long.parseLong(tokens[0]);
+                for (int j = 1; j < tokens.length; ++j) {
+                    graph.addWeightedEdge(fromID, Long.parseLong(tokens[j]));
+                }
+            }
+
+            in.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        graph.clean();
+        return graph;
+    }
+
     /** Adds a node to this graph, if it doesn't yet exist. **/
     void addNode(Node node) {
         if (!nodes.containsKey(node.id())) {
@@ -96,16 +158,14 @@ public class StreetMapGraph implements AStarGraph<Long> {
     /** Adds an edge to this graph, if FROMID and TOID are in this graph. Does
      *  not add additional edge if edge already exists.
      **/
-    void addWeightedEdge(long fromID, long toID, String name) {
+    void addWeightedEdge(long fromID, long toID) {
         if (nodes.containsKey(fromID) && nodes.containsKey(toID)) {
             Node from = nodes.get(fromID);
             Node to = nodes.get(toID);
             double weight = distance(from.lon(), to.lon(), from.lat(), to.lat());
 
             Set<WeightedEdge<Long>> edgeSet = neighbors.get(fromID);
-            WeightedEdge<Long> weightedEdge = new WeightedEdge<>(from.id(), to.id(), weight);
-            weightedEdge.setName(name);
-            edgeSet.add(weightedEdge);
+            edgeSet.add(new WeightedEdge<Long>(from.id(), to.id(), weight));
         }
     }
 
@@ -113,10 +173,10 @@ public class StreetMapGraph implements AStarGraph<Long> {
      * Removes vertices with 0 out-degree from graph. Note that this will
      * cause issues if edges are not bidirectional.
      **/
-    private void clean() {
+    StreetMapGraph clean() {
         List<Long> toRemove = new ArrayList<>();
         for (long id : nodes.keySet()) {
-            if (neighbors(id).size() == 0 && nodes.get(id).name() == null) {
+            if (neighbors(id).size() == 0) {
                 toRemove.add(id);
             }
         }
@@ -125,6 +185,8 @@ public class StreetMapGraph implements AStarGraph<Long> {
             nodes.remove(id);
             neighbors.remove(id);
         }
+
+        return this;
     }
 
     /**
@@ -192,46 +254,30 @@ public class StreetMapGraph implements AStarGraph<Long> {
     }
 
     /**
-     * Gets the longitude of a vertex.
-     * @param v The id of the vertex.
-     * @return The longitude of the vertex.
+     * Returns the human-readable string format of this graph. See
+     * writeToFile for format.
      */
-    public double lon(long v) {
-        if (!nodes.containsKey(v)) {
-            return 0.0;
+    private String getSimpleFormat() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(nodes.keySet().size() + "\n");
+        for (long id : nodes.keySet()) {
+            Node node = nodes.get(id);
+            sb.append(String.format("(%d, %.10f, %.10f)%n", id, node.lat(), node.lon()));
         }
-        return nodes.get(v).lon();
+
+        for (long id : nodes.keySet()) {
+            sb.append(String.format("%d : ", id));
+            for (WeightedEdge<Long> e : neighbors(id)) {
+                sb.append(e.to() + " ");
+            }
+            sb.append("\n");
+        }
+
+        return sb.toString();
     }
 
-    /**
-     * Gets the latitude of a vertex.
-     * @param v The id of the vertex.
-     * @return The latitude of the vertex.
-     */
-    public double lat(long v) {
-        if (!nodes.containsKey(v)) {
-            return 0.0;
-        }
-        return nodes.get(v).lat();
-    }
-
-    /**
-     * Gets the name of a vertex (if applicable).
-     * @param v The id of the vertex.
-     * @return The name of the vertex.
-     */
-    public String name(long v) {
-        if (!nodes.containsKey(v)) {
-            return null;
-        }
-        return nodes.get(v).name();
-    }
-
-    protected List<Node> getNodes() {
-        List<Node> nodes = new ArrayList<>();
-        for(Map.Entry<Long, Node> nodeEntry: this.nodes.entrySet()){
-            nodes.add(nodeEntry.getValue());
-        }
-        return nodes;
-    }
+    /*public static void main(String[] args) {
+        StreetMapGraph smg = StreetMapGraph.readFromXML("berkeley-2018.osm.xml");
+        smg.writeToFile("berkeley-street-data.txt");
+    }*/
 }

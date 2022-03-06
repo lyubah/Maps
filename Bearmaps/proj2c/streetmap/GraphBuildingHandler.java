@@ -5,7 +5,11 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  *  Parses OSM XML files using an XML SAX parser. Used to construct the graph of roads for
@@ -24,7 +28,7 @@ import java.util.*;
  *  element in the file. This is a very common but strange-when-you-first-see it pattern.
  *  It is similar to the Visitor pattern we discussed for graphs.
  *
- *  @author Alan Yao, Maurice Lee, with minor modifications by Lucas Pan for proj2c, Spring 2019
+ *  @author Alan Yao, Maurice Lee, with minor modifications by Lucas Pan for HW4, Spring 2019
  */
 public class GraphBuildingHandler extends DefaultHandler {
     /**
@@ -42,8 +46,6 @@ public class GraphBuildingHandler extends DefaultHandler {
     private boolean validWay = false;
     private List<Long> nodePath = new ArrayList<>();
     private final StreetMapGraph g;
-
-    private String wayName = "";
 
     public GraphBuildingHandler(StreetMapGraph g) {
         this.g = g;
@@ -66,6 +68,7 @@ public class GraphBuildingHandler extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes)
             throws SAXException {
+        /* Some example code on how you might begin to parse XML files. */
         if (qName.equals("node")) {
             /* We encountered a new <node...> tag. */
             activeState = "node";
@@ -83,6 +86,7 @@ public class GraphBuildingHandler extends DefaultHandler {
         } else if (activeState.equals("way") && qName.equals("nd")) {
             /* While looking at a way, we found a <nd...> tag. */
             //System.out.println("Id of a node in this way: " + attributes.getValue("ref"));
+
             nodePath.add(Long.parseLong(attributes.getValue("ref")));
         } else if (activeState.equals("way") && qName.equals("tag")) {
             /* While looking at a way, we found a <tag...> tag. */
@@ -91,15 +95,8 @@ public class GraphBuildingHandler extends DefaultHandler {
             if (k.equals("highway")) {
                 //System.out.println("Highway type: " + v);
                 validWay = ALLOWED_HIGHWAY_TYPES.contains(v);
-            } else if (k.equals("name")) {
-                //System.out.println("Way Name: " + v);
-                wayName = v;
             }
 //            System.out.println("Tag with k=" + k + ", v=" + v + ".");
-        } else if (activeState.equals("node") && qName.equals("tag") && attributes.getValue("k")
-                .equals("name")) {
-//            System.out.println("Node's name: " + attributes.getValue("v"));
-            activeNode.setName(attributes.getValue("v"));
         }
     }
 
@@ -122,8 +119,8 @@ public class GraphBuildingHandler extends DefaultHandler {
                 for (int i = 0; i < nodePath.size() - 1; i++) {
                     long fromID = nodePath.get(i);
                     long toID = nodePath.get(i + 1);
-                    g.addWeightedEdge(fromID, toID, wayName);
-                    g.addWeightedEdge(toID, fromID, wayName);
+                    g.addWeightedEdge(fromID, toID);
+                    g.addWeightedEdge(toID, fromID);
                 }
             }
             clearStates();
@@ -140,6 +137,5 @@ public class GraphBuildingHandler extends DefaultHandler {
         activeNode = null;
         validWay = false;
         nodePath = new ArrayList<>();
-        wayName = "";
     }
 }

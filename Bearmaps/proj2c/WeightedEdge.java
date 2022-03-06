@@ -9,8 +9,6 @@ public class WeightedEdge<Vertex> {
     private Vertex w;
     private double weight;
 
-    private String name;
-
     public WeightedEdge(Vertex v, Vertex w, double weight) {
         this.v = v;
         this.w = w;
@@ -24,13 +22,5 @@ public class WeightedEdge<Vertex> {
     }
     public double weight() {
         return weight;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }

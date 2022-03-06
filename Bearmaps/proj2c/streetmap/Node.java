@@ -10,8 +10,6 @@ public class Node {
     private double lat;
     private double lon;
 
-    private String name;
-
     private Node(long id, double lat, double lon) {
         this.id = id;
         this.lat = lat;
@@ -32,14 +30,6 @@ public class Node {
 
     public double lon() {
         return lon;
-    }
-
-    public String name() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     @Override
