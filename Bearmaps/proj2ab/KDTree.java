@@ -1,4 +1,4 @@
-package bearmaps.proj2ab;
+package bearmaps;
 
 import java.util.List;
 
