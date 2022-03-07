@@ -3,7 +3,7 @@ CS61B Bear Maps
 
 BearMaps is a Google Maps inspired clone for the vicinity of the UC Berkeley campus. It is capable of performing most features you would expect of a mapping application. The "smart" features of the application include map dragging/zooming, map rasterization, A* search algorithm between two points, and an auto-complete search feature.
 
-<img src="images/demo.gif" width="100%"/>
+![demo](https://github.com/kcheeeung/BearMaps/blob/master/images/demo.gif)
 
 Feature | Description
 ------- | -------
